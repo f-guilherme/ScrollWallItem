@@ -7,6 +7,7 @@ namespace GeodeExampleCSharp
     {
         public event EventHandler OnWallItemMove;
         public ScrollWallItem swi;
+        public bool isFlash = true; // default = flash
         bool isBigSteps;
         public MainWindow()
         {
@@ -52,7 +53,6 @@ namespace GeodeExampleCSharp
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
             OnWallItemMove?.Invoke(this, null);
-            label6.Text = swi.Concat();
         }
         #endregion
 
@@ -82,7 +82,6 @@ namespace GeodeExampleCSharp
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             OnWallItemMove?.Invoke(this, null);
-            label6.Text = swi.Concat();
         }
         #endregion
 
@@ -114,7 +113,6 @@ namespace GeodeExampleCSharp
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             OnWallItemMove?.Invoke(this, null);
-            label6.Text = swi.Concat();
         }
         #endregion
 
@@ -147,7 +145,6 @@ namespace GeodeExampleCSharp
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             OnWallItemMove?.Invoke(this, null);
-            label6.Text = swi.Concat();
         }
         #endregion
 
@@ -164,6 +161,18 @@ namespace GeodeExampleCSharp
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             isBigSteps = !isBigSteps;
+        }
+
+        private void unityRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (unityRadioButton.Checked)
+                isFlash = false;
+        }
+
+        private void flashRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (flashRadioButton.Checked)
+                isFlash = true;
         }
     }
 }
