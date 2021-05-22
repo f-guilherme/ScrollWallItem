@@ -2,5 +2,8 @@
 Use your scroll wheel to move wall items.
 
 ## Usage
-Open the extension directly trough the .exe, move your wall item once, hover your mouse on the boxes and scroll to move the item.
-You can use the "big steps" check box to move 10 units instead of 1.
+* Connect to Habbo using G-Earth (Flash/AIR or Unity)
+* Once connected, open the executable file of the extension (.exe),
+* G-Earth will pop a notification: "Extension tries to connect but isn't known to G-Earth, accept this connection?"
+* Click Yes,
+* Choose your game version in the extension window (default Flash).
