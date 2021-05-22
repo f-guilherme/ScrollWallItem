@@ -7,3 +7,5 @@ Use your scroll wheel to move wall items.
 * G-Earth will pop a notification: "Extension tries to connect but isn't known to G-Earth, accept this connection?"
 * Click Yes,
 * Choose your game version in the extension window (default Flash).
+* Move your item once, so that the extension captures it's id
+* Scroll on the boxes to move the item.
